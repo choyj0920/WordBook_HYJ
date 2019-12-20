@@ -1,9 +1,11 @@
 package WordBook_DATA;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Worddata {
 	
@@ -13,5 +15,20 @@ public class Worddata {
 	
 	LinkedHashMap<String, Word> wordbook=new LinkedHashMap<String, Word>();
 	
-	static void Loaduserlist();
+	static void LoadUserList() {
+		File load=new File("userdata/userlist.txt");
+		try {
+			Scanner scan= new Scanner(load);
+			while(scan.hasNext()) {
+				
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+	static void saveUserList() {
+		File load=new File("userdata/userlist.txt");
+		
+	}
 }
